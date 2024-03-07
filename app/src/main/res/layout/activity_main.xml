@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    style="@style/BACKGROUND"
+    android:padding="15dp"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <!-- First Line -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginBottom="12dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/loveSMS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    style="@style/LAYOUT_BACKGROUND"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:layout_marginRight="6dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    >
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/love"
+                        android:layout_marginBottom="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="লাভ মেসেজ"
+                        style="@style/TEXT_BACKGROUND"
+                        android:fontFamily="@font/bangla_font"
+                        android:gravity="center"
+                        android:paddingTop="6dp"
+                        android:paddingBottom="6dp"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/happySMS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    style="@style/LAYOUT_BACKGROUND"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="6dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    >
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/happy"
+                        android:layout_marginBottom="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="হাসির মেসেজ"
+                        style="@style/TEXT_BACKGROUND"
+                        android:fontFamily="@font/bangla_font"
+                        android:gravity="center"
+                        android:paddingTop="6dp"
+                        android:paddingBottom="6dp"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <!-- First Line -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginBottom="12dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/FBStatus01"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    style="@style/LAYOUT_BACKGROUND"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:layout_marginRight="6dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    >
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/fb_status"
+                        android:layout_marginBottom="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="FB স্ট্যাটাস"
+                        style="@style/TEXT_BACKGROUND"
+                        android:fontFamily="@font/bangla_font"
+                        android:gravity="center"
+                        android:paddingTop="6dp"
+                        android:paddingBottom="6dp"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/FBStatus02"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    style="@style/LAYOUT_BACKGROUND"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="6dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    >
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/fb_sad"
+                        android:layout_marginBottom="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="FB Sad স্ট্যাটাস"
+                        style="@style/TEXT_BACKGROUND"
+                        android:fontFamily="@font/bangla_font"
+                        android:gravity="center"
+                        android:paddingTop="6dp"
+                        android:paddingBottom="6dp"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <!-- Second Line -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginBottom="12dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/sadSMS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    style="@style/LAYOUT_BACKGROUND"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:layout_marginRight="6dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    >
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/sad"
+                        android:layout_marginBottom="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="কষ্টের মেসেজ"
+                        style="@style/TEXT_BACKGROUND"
+                        android:fontFamily="@font/bangla_font"
+                        android:gravity="center"
+                        android:paddingTop="6dp"
+                        android:paddingBottom="6dp"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/monePoraSMS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    style="@style/LAYOUT_BACKGROUND"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="6dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    >
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/mone_pora"
+                        android:layout_marginBottom="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="মনে পরার মেসেজ"
+                        style="@style/TEXT_BACKGROUND"
+                        android:fontFamily="@font/bangla_font"
+                        android:gravity="center"
+                        android:paddingTop="6dp"
+                        android:paddingBottom="6dp"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+            <!-- Third Line -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginBottom="12dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/morningSMS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    style="@style/LAYOUT_BACKGROUND"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:layout_marginRight="6dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    >
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/morning"
+                        android:layout_marginBottom="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="শুভ সকাল মেসেজ"
+                        style="@style/TEXT_BACKGROUND"
+                        android:fontFamily="@font/bangla_font"
+                        android:gravity="center"
+                        android:paddingTop="6dp"
+                        android:paddingBottom="6dp"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/nightSMS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    style="@style/LAYOUT_BACKGROUND"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="6dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    >
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/night"
+                        android:layout_marginBottom="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="শুভ রাত্রী মেসেজ"
+                        style="@style/TEXT_BACKGROUND"
+                        android:fontFamily="@font/bangla_font"
+                        android:gravity="center"
+                        android:paddingTop="6dp"
+                        android:paddingBottom="6dp"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+            <!-- Four Line -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginBottom="12dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/islamicSMS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    style="@style/LAYOUT_BACKGROUND"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:layout_marginRight="6dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    >
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/islamic"
+                        android:layout_marginBottom="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ইসলামিক মেসেজ"
+                        style="@style/TEXT_BACKGROUND"
+                        android:fontFamily="@font/bangla_font"
+                        android:gravity="center"
+                        android:paddingTop="6dp"
+                        android:paddingBottom="6dp"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/friendSMS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    style="@style/LAYOUT_BACKGROUND"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="6dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    >
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/friends"
+                        android:layout_marginBottom="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="প্রিয় বন্ধু মেসেজ"
+                        style="@style/TEXT_BACKGROUND"
+                        android:fontFamily="@font/bangla_font"
+                        android:gravity="center"
+                        android:paddingTop="6dp"
+                        android:paddingBottom="6dp"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+            <!-- Fiver Line -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginBottom="12dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/eidSMS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    style="@style/LAYOUT_BACKGROUND"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:layout_marginRight="6dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    >
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/eid"
+                        android:layout_marginBottom="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ঈদ মেসেজ"
+                        style="@style/TEXT_BACKGROUND"
+                        android:fontFamily="@font/bangla_font"
+                        android:gravity="center"
+                        android:paddingTop="6dp"
+                        android:paddingBottom="6dp"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/newYearSMS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    style="@style/LAYOUT_BACKGROUND"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="6dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    >
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/noboborso"
+                        android:layout_marginBottom="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="নববর্ষ মেসেজ"
+                        style="@style/TEXT_BACKGROUND"
+                        android:fontFamily="@font/bangla_font"
+                        android:gravity="center"
+                        android:paddingTop="6dp"
+                        android:paddingBottom="6dp"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <!-- Six Line -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginBottom="12dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/birthdaySMS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    style="@style/LAYOUT_BACKGROUND"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:layout_marginRight="6dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    >
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/birthday"
+                        android:layout_marginBottom="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="শুভ জন্মদিন মেসেজ"
+                        style="@style/TEXT_BACKGROUND"
+                        android:fontFamily="@font/bangla_font"
+                        android:gravity="center"
+                        android:paddingTop="6dp"
+                        android:paddingBottom="6dp"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/aboutMe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    style="@style/LAYOUT_BACKGROUND"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="6dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    >
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/about_me"
+                        android:layout_marginBottom="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="আমাদের সম্পর্কে"
+                        style="@style/TEXT_BACKGROUND"
+                        android:fontFamily="@font/bangla_font"
+                        android:gravity="center"
+                        android:paddingTop="6dp"
+                        android:paddingBottom="6dp"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <!-- End Line -->
+
+
+
+
+            <LinearLayout
+                android:id="@+id/thanks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                android:layout_marginTop="5dp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                style="@style/LAYOUT_BACKGROUND"
+                android:paddingLeft="10dp"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/thanks"
+                    android:layout_weight="3"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="7"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="আপনাকে ধন্যবাদ !"
+                        android:fontFamily="@font/bangla_font"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        style="@style/TEXT_COLOR"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="আপনার মতামত জানাতে ভুলবেন না.."
+                        android:fontFamily="@font/bangla_font"
+                        android:textSize="16sp"
+                        android:textColor="#979494"
+                        android:textStyle="bold"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

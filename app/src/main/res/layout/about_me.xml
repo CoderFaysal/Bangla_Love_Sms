@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutMe"
+    android:orientation="vertical"
+    style="@style/BACKGROUND"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="15dp"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/fahimfaysal"
+                android:layout_marginTop="5dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                style="@style/ABOUT_MAIN"
+                android:layout_marginTop="10dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="70sp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    style="@style/ABOUT_SECOUNDARY"
+                    android:gravity="center"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/about_us"
+                        />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fahim Faysal"
+                    style="@style/TEXT_COLOR"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10sp"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                style="@style/ABOUT_MAIN"
+                android:layout_marginTop="8dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="70sp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    style="@style/ABOUT_SECOUNDARY"
+                    android:gravity="center"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_call"
+                        />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+880 1892-837253"
+                    style="@style/TEXT_COLOR"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10sp"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                style="@style/ABOUT_MAIN"
+                android:layout_marginTop="8dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="70sp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    style="@style/ABOUT_SECOUNDARY"
+                    android:gravity="center"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/email"
+                        />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="developerfaysal64@gmail.com"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10sp"
+                    style="@style/TEXT_COLOR"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                style="@style/ABOUT_MAIN"
+                android:layout_marginTop="8dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="70sp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    style="@style/ABOUT_SECOUNDARY"
+                    android:gravity="center"
+                    >
+
+                    <ImageView
+                        android:layout_width="27dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/fblite"
+                        />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/facebook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="https://fb.com/coderfaysal"
+                    style="@style/TEXT_COLOR"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10sp"
+                    />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_marginTop="20dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/share"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    style="@style/LAYOUT_BACKGROUND"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:layout_marginRight="6dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    >
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/share"
+                        android:layout_marginBottom="5dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="শেয়ার করুন"
+                        style="@style/TEXT_BACKGROUND"
+                        android:fontFamily="@font/bangla_font"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/rating"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    style="@style/LAYOUT_BACKGROUND"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    >
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/rating"
+                        android:layout_marginBottom="5dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="রেটিং দিন"
+                        style="@style/TEXT_BACKGROUND"
+                        android:fontFamily="@font/bangla_font"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/moreApp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    style="@style/LAYOUT_BACKGROUND"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="6dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    >
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/moreapp"
+                        android:layout_marginBottom="5dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="অন্যান্য অ্যাপ"
+                        style="@style/TEXT_BACKGROUND"
+                        android:fontFamily="@font/bangla_font"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Current Version"
+                style="@style/TEXT_COLOR"
+                android:textSize="16sp"
+                />
+
+
+            <TextView
+                android:id="@+id/versionName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6.1.4"
+                style="@style/TEXT_COLOR"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:id="@+id/powerBY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"
+                android:text="@string/power_BY"
+                style="@style/TEXT_COLOR"
+                android:textSize="14sp"
+                />
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

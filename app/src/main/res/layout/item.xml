@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:padding="15dp"
+        style="@style/LAYOUT_BACKGROUND"
+        >
+
+        <TextView
+            android:id="@+id/tvDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ভালোবাসা তো যায়না টাকা দিয়ে কেনা, ভালোবাসা তো যায়না হীরা মুক্তা দিয়ে গড়া। দুটি মনের আকুলতায় যে বন্ধন হয়, তাকেই তো ভালোবাসা কয় ।"
+            style="@style/TEXT_COLOR"
+            android:fontFamily="@font/bangla_font"
+            android:textSize="17sp"
+            android:gravity="center"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="12dp"
+            >
+            <TextView
+                android:id="@+id/tvCopy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="কপি করুন"
+                style="@style/TEXT_BACKGROUND"
+                android:fontFamily="@font/bangla_font"
+                android:gravity="center"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_marginRight="6dp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                />
+
+            <TextView
+                android:id="@+id/tvShare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="শেয়ার করুন"
+                style="@style/TEXT_BACKGROUND"
+                android:fontFamily="@font/bangla_font"
+                android:gravity="center"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_marginLeft="6dp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "192696655872",
+    "project_id": "pongadami-funny-status",
+    "storage_bucket": "pongadami-funny-status.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:192696655872:android:746b243ef2f8b90f2338e5",
+        "android_client_info": {
+          "package_name": "com.coderfaysal.banglafunnystatus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "192696655872-b98oqn5no42mkviq2i0vfn71dftal25j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9QSXQsqcD4Bms-ouOBec-QfiHypgDPmk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "192696655872-b98oqn5no42mkviq2i0vfn71dftal25j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
